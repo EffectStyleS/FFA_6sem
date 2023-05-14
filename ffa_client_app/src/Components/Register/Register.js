@@ -35,27 +35,24 @@ const Register = ({user, setUser}) => {
                     return response.json();
                 }
             })
-            .then(
-                (data) => {
-                    console.log("Data:", data)
-                    if (
-                        typeof data !== 'undefined' &&
-                        typeof data.userId !== 'undefined' &&
-                        typeof data.userName !== 'undefined' &&
-                        typeof data.userRole !== 'undefined'
-                    ) {
-                        setUser({isAuthenticated: true, userId: data.userId, userName: data.userName, userRole: data.userRole});
-                        setRegistrationSuccess(true);
-                        navigate('/incomes'); // перенаправлять на главное меню
-                    }
-
+            .then((data) => {
+                console.log("Data:", data)
+                if (
                     typeof data !== 'undefined' &&
-                    typeof data.error !== 'undefined' &&
-                    setErrorMessages(data.error);
-                },
-                (error) => {
-                    console.log(error);
-                },
+                    typeof data.userId !== 'undefined'
+                ) {
+                    setUser({isAuthenticated: true, userId: data.userId, userName: formValues.userName, userRole: selectedRole});
+                    setRegistrationSuccess(true);
+                    navigate('/incomes'); // перенаправлять на страницу доходов
+                }
+
+                typeof data !== 'undefined' &&
+                typeof data.error !== 'undefined' &&
+                setErrorMessages(data.error);
+            },
+            (error) => {
+                console.log(error);
+            },
             );
     };
 
@@ -148,7 +145,8 @@ const Register = ({user, setUser}) => {
 
                         {registrationSuccess && (
                             // eslint-disable-next-line max-len
-                            <p>Регистрация прошла успешно. Вы будете перенаправлены на главную страницу.</p>
+                            <p>Регистрация прошла успешно. Вы будете перенаправлены на страницу доходов.</p>
+
                         )}
                         {renderErrorMessage()}
                     </Space>
