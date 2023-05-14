@@ -18,8 +18,7 @@ namespace FFA6sem.Model.Services
 
         public async Task<UserModel> GetUserByName(string name, UserManager<User> userManager)
         {
-            var helpUser = await db.User
-                .GetAll();
+            var helpUser = await db.User.GetAll();
 
             return helpUser
                 .Where(x => x.UserName == name)
@@ -27,19 +26,19 @@ namespace FFA6sem.Model.Services
                 .FirstOrDefault();
         }
 
-        public async Task<IdentityResult> AddToRoleAsync(UserModel userModel, UserManager<User> userManager)
-        {
-            var helpUsers = await db.User.GetAll();
-            var result = await userManager.AddToRoleAsync(helpUsers.Where(x => x.UserName == userModel.UserName).FirstOrDefault(), userModel.Role);
-            return result;
-        }
+        //public async Task<IdentityResult> AddToRoleAsync(UserModel userModel, UserManager<User> userManager)
+        //{
+        //    var helpUsers = await db.User.GetAll();
+        //    var result = await userManager.AddToRoleAsync(helpUsers.FirstOrDefault(x => x.UserName == userModel.UserName), userModel.Role);
+        //    return result;
+        //}
 
         public async Task SignInAsync(UserModel userModel, SignInManager<User> signInManager)
         {
             try
             {
                 var helpUsers = await db.User.GetAll();
-                await signInManager.SignInAsync(helpUsers.Where(x => x.UserName == userModel.UserName).FirstOrDefault(), false);
+                await signInManager.SignInAsync(helpUsers.FirstOrDefault(x => x.UserName == userModel.UserName), false);
             }
             catch (Exception ex)
             {

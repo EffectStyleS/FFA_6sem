@@ -119,18 +119,19 @@ namespace FFA6sem.Model.Services
             await Save();
         }
 
-        public async Task<IdentityResult> CreateUser(UserModel user, UserManager<User> userManager)
+        public async Task<IdentityResult> CreateUser(UserModel userModel, UserManager<User> userManager)
         {
             User newUser = new User()
             {
-                UserName     = user.UserName,
+                UserName = userModel.UserName,
             };
 
-            var result = await _db.User.Create(newUser, user.Password, userManager);
+            var result = await _db.User.Create(newUser, userModel.Password, userManager);
 
             if (result.Succeeded)
             {
-                Save();
+                await userManager.AddToRoleAsync(newUser, userModel.Role);
+                await Save();
             }
 
             return result;
@@ -216,7 +217,7 @@ namespace FFA6sem.Model.Services
             if (await _db.User.GetItem(id, userManager) != null)
             {
                 await _db.User.Delete(id, userManager);
-                Save();
+                await Save();
             }
         }
         #endregion
@@ -610,7 +611,7 @@ namespace FFA6sem.Model.Services
 
             await _db.User.Update(u, userManager);
 
-            Save();
+            await Save();
         }
 
         #endregion

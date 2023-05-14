@@ -4,6 +4,7 @@ using FFA6sem.Model.Models;
 using FFA6sem.Model.Services;
 using FFA6sem.ViewModels;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,59 +30,59 @@ namespace FFA6sem.Controllers
             _logger        = logger;
         }
 
-        //[HttpPost]
-        //[Route("api/account/register")]
-        //[AllowAnonymous]
-        //public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        UserModel newUser = new UserModel()
-        //        {
-        //            UserName = model.UserName,
-        //            Password = model.Password,
-        //            Role     = model.Role,
-        //        };
+        [HttpPost]
+        [Route("api/account/register")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                UserModel newUser = new UserModel()
+                {
+                    UserName = model.UserName,
+                    Password = model.Password,
+                    Role = model.Role,
+                };
 
-        //        // Добавление нового пользователя
-        //        var result = await _dbCrud.CreateUser(newUser, _userManager);
+                // Добавление нового пользователя
+                var result = await _dbCrud.CreateUser(newUser, _userManager);
 
-        //        if (result.Succeeded)
-        //        {
-        //            // Установка роли User
-        //            await _userService.AddToRoleAsync(newUser, _userManager);
+                if (result.Succeeded)
+                {
+                    var helpUserId = await _userService.GetUserByName(newUser.UserName, _userManager);
+                    string userId = helpUserId.Id;
 
-        //            // Установка куки
-        //            await _userService.SignInAsync(newUser, _signInManager);
-        //            return Ok(new { message = "Добавлен новый пользователь: " + newUser.UserName + " c ролью " + newUser.Role });
-        //        }
-        //        else
-        //        {
-        //            foreach (var error in result.Errors)
-        //            {
-        //                ModelState.AddModelError(string.Empty, error.Description);
-        //            }
+                    // Установка куки
+                    await _userService.SignInAsync(newUser, _signInManager);
+                    return Ok(new { message = "Добавлен новый пользователь: " + newUser.UserName + " c ролью " + newUser.Role, userId = userId });
+                }
+                else
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
 
-        //            var errorMsg = new
-        //            {
-        //                message = "Пользователь не добавлен",
-        //                error = ModelState.Values.SelectMany(e => e.Errors.Select(er => er.ErrorMessage))
-        //            };
+                    var errorMsg = new
+                    {
+                        message = "Пользователь не добавлен",
+                        error = ModelState.Values.SelectMany(e => e.Errors.Select(er => er.ErrorMessage))
+                    };
 
-        //            return Created("", errorMsg);
-        //        }
-        //    }
-        //    else
-        //    {
-        //        var errorMsg = new
-        //        {
-        //            message = "Неверные входные данные",
-        //            error = ModelState.Values.SelectMany(e => e.Errors.Select(er => er.ErrorMessage))
-        //        };
+                    return Created("", errorMsg);
+                }
+            }
+            else
+            {
+                var errorMsg = new
+                {
+                    message = "Неверные входные данные",
+                    error = ModelState.Values.SelectMany(e => e.Errors.Select(er => er.ErrorMessage))
+                };
 
-        //        return Created("", errorMsg);
-        //    }
-        //}
+                return Created("", errorMsg);
+            }
+        }
 
         [HttpPost]
         [Route("api/account/login")]
@@ -93,8 +94,7 @@ namespace FFA6sem.Controllers
                 UserModel currentUserModel = new UserModel
                 {
                     UserName = model.UserName,
-                    Password = model.Password,
-                    
+                    Password = model.Password,                  
                 };
 
                 var result = await _userService.PasswordSignInAsync(currentUserModel, model.RememberMe, _signInManager);
@@ -102,8 +102,11 @@ namespace FFA6sem.Controllers
                 {
                     string? userRole = await _userService.GetUserRole(currentUserModel.UserName, _userManager);
 
+                    var helpUserId = await _userService.GetUserByName(currentUserModel.UserName, _userManager);
+                    string userId = helpUserId.Id;
+
                     _logger.LogInformation("Login {0} succeeded", currentUserModel.UserName);
-                    return Ok(new { message = "Выполнен вход", userName = model.UserName, userRole = userRole });
+                    return Ok(new { message = "Выполнен вход", userId = userId, userName = model.UserName, userRole = userRole });
                 }
                 else
                 {
