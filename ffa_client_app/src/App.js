@@ -71,11 +71,11 @@ const App = () => {
 
           <Route 
             path="/incomes" 
-            element={<Incomes userId={user.userId} />}
+            element={<Incomes userId={user.userId} userRole={user.userRole} />}
           />
           <Route 
             path="/expenses" 
-            element={<Expenses userId={user.userId} />} 
+            element={<Expenses userId={user.userId} userRole={user.userRole} />} 
           />
           <Route
             path="/budgets"

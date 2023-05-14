@@ -4,14 +4,84 @@ import moment from "moment/moment";
 
 import "./Expenses.css"
 
-const Expenses = ({ userId }) => {
+const Expenses = ({ userId, userRole }) => {
     const [expenses, setExpenses] = useState([]);
     const [selectedExpense, setSelectedExpense] = useState(null);
+
     const [modalVisible, setModalVisible] = useState(false);
+    const [reportVisible, setReportVisible] = useState(false);
+    const [reportNullVisible, setReportNullVisible] = useState(false);
+
     const [expenseTypes, setExpenseTypes] = useState([]);
     const [selectedExpenseType, setSelectedExpenseType] = useState(null);
+
+    const [budgets, setBudgets] = useState([]);
+
+    const [filteredExpensesData, setFilteredExpensesData] = useState(null);
+    const [isFilteredExpensesDataEditing, setIsFilteredExpensesDataEditing] = useState(false);
+    const [isFilteredExpensesDataSets, setIsFilteredExpensesDataSets] = useState(false);
+
+    const [users, setUsers] = useState(null);
+    const [selectedUser, setSelectedUser] = useState(null);
+
     const [form] = Form.useForm();
 
+    useEffect(() => {
+
+        const fetchUsers = async () => {
+            try {
+                const usersResponse = await fetch(`api/User`);
+                if (usersResponse.status === 200) {
+                    const usersData = await usersResponse.json();
+                    const formattedUsers = usersData.map(user => ({
+                        userId: user.id,
+                        userName: user.userName,
+                        userRole: user.role
+                    }));
+                    setUsers(formattedUsers);
+    
+                    // Установить выбранного пользователя, если userId совпадает
+                    const currentUser = formattedUsers.find(user => user.userId === userId);
+                    setSelectedUser(currentUser);
+                } else {
+                    throw new Error("Failed to fetch users");
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        };
+      
+        fetchUsers();
+      }, []); 
+
+    useEffect(() => {
+        const fetchBudgets = async () => {
+            try {
+                const budgetsResponse = await fetch(`api/Budget/user/${selectedUser.userId}`);
+                if (budgetsResponse.status === 200) {
+                    const budgetsData = await budgetsResponse.json();    
+
+                    const budgets = budgetsData.map((budget) => {
+                        const responseDate = new Date(budget.startDate);
+    
+                        return {
+                            ...budget,
+                            startDate: `${responseDate.getFullYear()}-${responseDate.getMonth() + 1}-${responseDate.getDate()}`
+                        };
+                    });
+    
+    
+                    setBudgets(budgets);
+                } else {
+                    throw new Error("Failed to fetch budgets");
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        };
+      
+        fetchBudgets();
+    }, [selectedUser])
 
     useEffect(() => {
 
@@ -36,7 +106,7 @@ const Expenses = ({ userId }) => {
 
         const fetchData = async () => {
             try {
-                const expensesResponse = await fetch(`api/Expense/user/${userId}`);
+                const expensesResponse = await fetch(`api/Expense/user/${selectedUser.userId}`);
                 if (expensesResponse.status === 200) {
                     const expensesData = await expensesResponse.json();
 
@@ -50,11 +120,13 @@ const Expenses = ({ userId }) => {
 
                                 console.log("expenseTypeData: ", expenseTypeData);
                                 
+                                const responseDate = new Date(expense.date);
+
                                 return {
                                     key: expense.id,
                                     name: expense.name,
                                     value: expense.value,
-                                    date: expense.date,
+                                    date: `${responseDate.getFullYear()}-${responseDate.getMonth() + 1}-${responseDate.getDate()}`,
                                     userId: expense.userId,
                                     expenseTypeId: expense.expenseTypeId,
                                     expenseType: expenseTypeData.name,
@@ -75,7 +147,7 @@ const Expenses = ({ userId }) => {
         };
     
         fetchData();
-      }, []);
+      }, [selectedUser]);
 
     const handleAddExpense = () => {
         form.resetFields();
@@ -253,7 +325,107 @@ const Expenses = ({ userId }) => {
         });
     };
 
+    useEffect(() => {
+        if ( isFilteredExpensesDataEditing === true &&
+            filteredExpensesData !== null &&
+            filteredExpensesData[filteredExpensesData.length - 1]?.budget?.startDate !== undefined
+        )
+        {
+            setIsFilteredExpensesDataSets(true);
+        }
+    }, [isFilteredExpensesDataEditing, filteredExpensesData])
 
+    useEffect(() => {
+        if(isFilteredExpensesDataSets === true)
+        {
+            setReportVisible(true);
+            setIsFilteredExpensesDataSets(false);
+        }
+    }, [isFilteredExpensesDataSets])
+
+    const handleReportOpen = async () => {
+        setIsFilteredExpensesDataEditing(false);
+        setIsFilteredExpensesDataSets(false);
+
+        await fetch(`api/User/${selectedUser.userId}`)
+            .then((response) => {
+                if (response.status === 200)
+                {
+                    return response.json();                   
+                }
+                else
+                {
+                    throw new Error("Failed to fetch user");
+                }
+            })
+            .then((userData) => {
+                console.log(userData);
+
+                const user = userData;
+
+                fetch(`api/Report/difference`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        id: user.id,
+                        userName: user.userName,
+                        password: "",
+                        role: user.role
+                    }),
+                })
+                    .then((response) => {
+                        if (response.status === 200)
+                        {
+                            return response.json();                   
+                        }
+                        else
+                        {
+                            throw new Error("Failed to fetch difference");
+                        }
+                    })
+                    .then((data) => {
+                        console.log("Data: ", data);
+
+                        // Создание нового массива со значениями, типами расходов и бюджетами
+                        const expensesData = data.map((arr, index) => {
+                            const budget = budgets[index]; 
+                            return arr.map((value, i) => {
+                                const expenseType = expenseTypes[i]; 
+                                return { value, expenseType, budget };
+                            });
+                        });
+                        console.log(expensesData);
+
+                        // отфильтрованные данные
+                        const filteredData = expensesData.flat().filter((item) => item.value > 0);
+                        if(filteredData.length === 0 || filteredData === null)
+                        {
+                            setReportVisible(true);
+                        }
+                        else
+                        {
+                            setFilteredExpensesData(filteredData);
+                            setIsFilteredExpensesDataEditing(true);
+                            console.log(filteredExpensesData);
+                        }
+                    })
+                    .catch((error) => 
+                    {
+                        console.log(error);
+                    })     
+            })
+            .catch((error) => 
+            {
+                console.log(error);
+            })        
+
+    }
+
+    const handleReportCancel = () => {
+        setReportVisible(false);
+    }
 
     const columns = [
         { title: "Название", dataIndex: "name" },
@@ -276,6 +448,29 @@ const Expenses = ({ userId }) => {
         <>
             <Button onClick={handleAddExpense} style={{ marginBottom: 16 }} className="addButton">
                 Добавить расход
+            </Button>
+
+            {userRole === "admin" && selectedUser !== null && (
+                <Select
+                    value={selectedUser.userId}
+                    onChange={(userId) => {
+                        const newSelectedUser = users.find(user => user.userId === userId);
+                        setSelectedUser(newSelectedUser);
+                    }}
+                    style={{ marginLeft: 10 ,marginBottom: 16 }}
+                    className="userSelect"
+                    dropdownMatchSelectWidth={false}
+                >
+                    {users.map((user) => (
+                        <Select.Option key={user.userId} value={user.userId}>
+                            {user.userName}
+                        </Select.Option>
+                    ))}
+                </Select>
+            )}
+
+            <Button onClick={handleReportOpen} style={{ marginBottom: 16 }} className="getDifferences">
+                Превышения бюджетов
             </Button>
 
             <Table dataSource={expenses} columns={columns} />
@@ -311,7 +506,7 @@ const Expenses = ({ userId }) => {
                         initialValue={selectedDate}
                         rules={[{ required: true, message: "Введите дату" }]}
                     >
-                        <DatePicker format="YYYY-MM-DD" />
+                        <DatePicker format="YYYY-MM-DD" showTime={false}/>
                     </Form.Item>
 
                     <Form.Item
@@ -338,6 +533,25 @@ const Expenses = ({ userId }) => {
                     </Form.Item>
                 </Form>
             </Modal>
+
+            <Modal
+                destroyOnClose={true}
+                title="Отчёт"
+                open={reportVisible}
+                onCancel={handleReportCancel}
+                footer={null}              
+            >
+                {filteredExpensesData && filteredExpensesData.length > 0 ? (
+                    filteredExpensesData.map((item, index) => (
+                    <div key={index}>
+                        <p>Категория {item.expenseType.name} превысила бюджет с {item.budget.startDate} на {item.value} рубля</p>
+                    </div>
+                    ))
+                ) : (
+                    <p>Нет превышений бюджетов</p>
+                )}
+            </Modal>
+
         </>
     );
 };

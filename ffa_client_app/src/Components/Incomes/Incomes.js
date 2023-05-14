@@ -4,13 +4,44 @@ import moment from "moment/moment";
 
 import "./Incomes.css"
 
-const Incomes = ({ userId }) => {
+const Incomes = ({ userId, userRole }) => {
     const [incomes, setIncomes] = useState([]);
     const [selectedIncome, setSelectedIncome] = useState(null);
     const [modalVisible, setModalVisible] = useState(false);
     const [incomeTypes, setIncomeTypes] = useState([]);
     const [selectedIncomeType, setSelectedIncomeType] = useState(null);
+
+    const [users, setUsers] = useState(null);
+    const [selectedUser, setSelectedUser] = useState(null);
     const [form] = Form.useForm();
+
+    useEffect(() => {
+
+        const fetchUsers = async () => {
+            try {
+                const usersResponse = await fetch(`api/User`);
+                if (usersResponse.status === 200) {
+                    const usersData = await usersResponse.json();
+                    const formattedUsers = usersData.map(user => ({
+                        userId: user.id,
+                        userName: user.userName,
+                        userRole: user.role
+                    }));
+                    setUsers(formattedUsers);
+    
+                    // Установить выбранного пользователя, если userId совпадает
+                    const currentUser = formattedUsers.find(user => user.userId === userId);
+                    setSelectedUser(currentUser);
+                } else {
+                    throw new Error("Failed to fetch users");
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        };
+      
+        fetchUsers();
+      }, []);
 
     useEffect(() => {
 
@@ -35,7 +66,7 @@ const Incomes = ({ userId }) => {
 
         const fetchData = async () => {
             try {
-                const incomesResponse = await fetch(`api/Income/user/${userId}`);
+                const incomesResponse = await fetch(`api/Income/user/${selectedUser.userId}`);
                 if (incomesResponse.status === 200) {
                     const incomesData = await incomesResponse.json();
 
@@ -49,11 +80,13 @@ const Incomes = ({ userId }) => {
 
                                 console.log("incomeTypeData: ", incomeTypeData);
                                 
+                                const responseDate = new Date(income.date);
+
                                 return {
                                     key: income.id,
                                     name: income.name,
                                     value: income.value,
-                                    date: income.date,
+                                    date: `${responseDate.getFullYear()}-${responseDate.getMonth() + 1}-${responseDate.getDate()}`,
                                     userId: income.userId,
                                     incomeTypeId: income.incomeTypeId,
                                     incomeType: incomeTypeData.name,
@@ -74,13 +107,13 @@ const Incomes = ({ userId }) => {
         };
     
         fetchData();
-    }, []);
+    }, [selectedUser]);
 
     const handleAddIncome = () => {
         form.resetFields();
         setSelectedIncome(null);
         setSelectedIncomeType(null);
-        setModalVisible(true);
+        setModalVisible(true);      
     };
 
     const handleEditIncome = (income) => {
@@ -88,9 +121,10 @@ const Incomes = ({ userId }) => {
         setSelectedIncome(income);
         setSelectedIncomeType(income.incomeTypeId);
         setModalVisible(true);
+        
     };
 
-    const handleDeleteIncome = (incomeId) => {
+    const handleDeleteIncome = (incomeId) => {      
         // Вызов API для удаления дохода
         fetch(`api/Income/${incomeId}`, {
             method: "DELETE",
@@ -108,6 +142,7 @@ const Incomes = ({ userId }) => {
             .catch((error) => {
                 console.log(error);
             });
+        
     };
 
     const handleModalCancel = () => {
@@ -261,8 +296,17 @@ const Incomes = ({ userId }) => {
         {
             render: (_, income) => (
                 <>
-                    <Button onClick={() => handleEditIncome(income)}>Редактировать</Button>
-                    <Button onClick={() => handleDeleteIncome(income.key)}>Удалить</Button>
+                    <Button onClick={() => handleEditIncome(income)}
+                        disabled={selectedUser && selectedUser.userId !== userId}
+                    >
+                        Редактировать
+                    </Button>
+                    <Button 
+                        onClick={() => handleDeleteIncome(income.key)}
+                        disabled={selectedUser && selectedUser.userId !== userId}
+                    >
+                            Удалить
+                    </Button>
                 </>
             ),
         },
@@ -272,9 +316,31 @@ const Incomes = ({ userId }) => {
 
     return (
         <>
-            <Button onClick={handleAddIncome} style={{ marginBottom: 16 }} className="addButton">
+            <Button onClick={handleAddIncome}
+                style={{ marginBottom: 16 }}
+                className="addButton"
+                disabled={selectedUser && selectedUser.userId !== userId}>
                 Добавить доход
             </Button>
+
+            {userRole === "admin" && selectedUser !== null && (
+                <Select
+                    value={selectedUser.userId}
+                    onChange={(userId) => {
+                        const newSelectedUser = users.find(user => user.userId === userId);
+                        setSelectedUser(newSelectedUser);
+                    }}
+                    style={{ marginLeft: 10 ,marginBottom: 16 }}
+                    className="userSelect"
+                    dropdownMatchSelectWidth={false}
+                >
+                    {users.map((user) => (
+                        <Select.Option key={user.userId} value={user.userId}>
+                            {user.userName}
+                        </Select.Option>
+                    ))}
+                </Select>
+            )}
 
             <Table dataSource={incomes} columns={columns} />
             <Modal
