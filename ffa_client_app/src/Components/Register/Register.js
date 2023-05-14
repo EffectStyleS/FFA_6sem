@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
-import { Form, Input, Button, Select } from 'antd'
+import { Form, Input, Button, Select, Space } from 'antd'
 
 
 
@@ -66,84 +66,95 @@ const Register = ({user, setUser}) => {
     };
 
     return (
-        <>
-        {user.isAuthenticated ? (
-            <h3>Пользователь {user.userName} с ролью {user.userRole} уже вошел в систему</h3>
-        ): (
-            <>
-                <h3>Регистрация</h3>
-                <Form
-                    onFinish={register}
-                    name="basic"
-                    labelCol={{ span: 8 }}
-                    wrapperCol={{ span: 16 }}
-                    style={{ maxWidth: 600 }}
-                    initialValues={{ role: "user" }}
-                    onFinishFailed={renderErrorMessage}
-                    autoComplete="off"
-                >
-                    <Form.Item
-                        label="Username"
-                        name="userName"
-                        rules={[
-                            { required: true, message: "Please input your username!" },
-                        ]}
-                    >
-                        <Input />
-                    </Form.Item>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+            {user.isAuthenticated ? (
+                <h3>Пользователь {user.userName} с ролью {user.userRole} уже вошел в систему</h3>
+            ): (
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+                    <Space direction="vertical" size="large">
+                        <div style={{ display: "flex", justifyContent: "center" }}>
+                            <h1>Family Finance Analysis</h1>
+                        </div>
+                        <div style={{ display: "flex", justifyContent: "center" }}>
+                            <h3>Регистрация</h3>
+                        </div>
+                        <Form
+                            onFinish={register}
+                            name="basic"
+                            labelCol={{ span: 16 }}
+                            wrapperCol={{ span: 16 }}
+                            style={{ maxWidth: 600 }}
+                            initialValues={{ role: "user" }}
+                            onFinishFailed={renderErrorMessage}
+                            autoComplete="off"
+                        >
+                            <Form.Item
+                                label="Username"
+                                name="userName"
+                                labelCol={{ span: 10 }}
+                                rules={[
+                                    { required: true, message: "Please input your username!" },
+                                ]}
+                            >
+                                <Input />
+                            </Form.Item>
 
-                    <Form.Item
-                        label="Password"
-                        name="password"
-                        rules={[
-                            { required: true, message: "Please input your password!" },
-                        ]}
-                    >
-                        <Input.Password />
-                    </Form.Item>
+                            <Form.Item
+                                label="Password"
+                                name="password"
+                                labelCol={{ span: 10 }}
+                                rules={[
+                                    { required: true, message: "Please input your password!" },
+                                ]}
+                            >
+                                <Input.Password />
+                            </Form.Item>
 
-                    <Form.Item
-                        label="Repeat Password"
-                        name="repassword"
-                        rules={[
-                            { required: true, message: "Please repeat your password!" },
-                        ]}
-                    >
-                        <Input.Password />
-                    </Form.Item>
+                            <Form.Item
+                                label="Repeat Password"
+                                name="repassword"
+                                labelCol={{ span: 10 }}
+                                rules={[
+                                    { required: true, message: "Please repeat your password!" },
+                                ]}
+                            >
+                                <Input.Password />
+                            </Form.Item>
 
-                    <Form.Item
-                        label="Role"
-                        name="role"
-                        rules={[
-                            { required: true, message: "Please choose your role!" },
-                        ]}
-                    >
-                        <Select
-                            style={{ width: 120 }}
-                            onChange={handleRoleChange}
-                            options = {[
-                                { value: "user", label: "User" },
-                                { value: "admin", label: "Admin" }
-                            ]}
-                        />
-                    </Form.Item>
+                            <Form.Item
+                                label="Role"
+                                name="role"
+                                labelCol={{ span: 10 }}
+                                rules={[
+                                    { required: true, message: "Please choose your role!" },
+                                ]}
+                            >
+                                <Select
+                                    style={{ width: 120 }}
+                                    onChange={handleRoleChange}
+                                    options = {[
+                                        { value: "user", label: "User" },
+                                        { value: "admin", label: "Admin" }
+                                    ]}
+                                />
+                            </Form.Item>
 
-                    <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                        <Button type="primary" htmlType="submit">
-                            Зарегистрироваться
-                         </Button>
-                    </Form.Item>
-                </Form>
+                            <Form.Item wrapperCol={{ offset: 8, span: 16 }} labelCol={{ span: 10 }}>
+                                <Button type="primary" htmlType="submit">
+                                    Зарегистрироваться
+                                </Button>
+                            </Form.Item>
+                        </Form>
 
-                {registrationSuccess && (
-                    // eslint-disable-next-line max-len
-                    <p>Регистрация прошла успешно. Вы будете перенаправлены на главную страницу.</p>
-                )}
-                {renderErrorMessage()}
-            </>
-        )}
-        </>
+                        {registrationSuccess && (
+                            // eslint-disable-next-line max-len
+                            <p>Регистрация прошла успешно. Вы будете перенаправлены на главную страницу.</p>
+                        )}
+                        {renderErrorMessage()}
+                    </Space>
+                </div>
+            )}
+        </div>
     );
 };
 

@@ -435,8 +435,18 @@ const Expenses = ({ userId, userRole }) => {
         {
             render: (_, expense) => (
                 <>
-                    <Button onClick={() => handleEditExpense(expense)}>Редактировать</Button>
-                    <Button onClick={() => handleDeleteExpense(expense.key)}>Удалить</Button>
+                    <Button 
+                        onClick={() => handleEditExpense(expense)} 
+                        disabled={selectedUser && selectedUser.userId !== userId}
+                    >
+                        Редактировать
+                    </Button>
+                    <Button 
+                        onClick={() => handleDeleteExpense(expense.key)}
+                        disabled={selectedUser && selectedUser.userId !== userId}
+                    >
+                        Удалить
+                    </Button>
                 </>
             ),
         },
@@ -446,7 +456,12 @@ const Expenses = ({ userId, userRole }) => {
 
     return (
         <>
-            <Button onClick={handleAddExpense} style={{ marginBottom: 16 }} className="addButton">
+            <Button 
+                onClick={handleAddExpense} 
+                style={{ marginBottom: 16 }} 
+                className="addButton"
+                disabled={selectedUser && selectedUser.userId !== userId}
+            >
                 Добавить расход
             </Button>
 

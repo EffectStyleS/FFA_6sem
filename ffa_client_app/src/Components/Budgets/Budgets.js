@@ -184,7 +184,6 @@ const Budgets = ({ userId }) => {
         }
     }, [isPlannedExpensesSets, isPlannedIncomesSets, isPlannedIncomesEditing, isPlannedExpensesEditing])
 
-
     useEffect(() => {
         if (isPlannedIncomesDeleting === true &&
             isPlannedExpensesDeleting === true &&
@@ -433,134 +432,6 @@ const Budgets = ({ userId }) => {
             setCanDelete(false);
             }
       };
-
-    // const handleDeleteBudget = (budgetId) => {
-    //     setIsPlannedExpensesEditing(false);
-    //     setIsPlannedIncomesEditable(false);
-      
-    //     // Заполняем listOfPlannedExpenses
-    //     const plannedExpenses = expenseTypes.map((expenseType) => ({
-    //         id: 0,
-    //         expenseTypeId: expenseType.id,
-    //         sum: 0,
-    //         budgetId: budgetId
-    //     }));
-
-    //     // Обновление id запланированных доходов
-    //     const deletePlannedExpensesPromise = fetch(`api/PlannedExpenses/budget/${budgetId}`)
-    //         .then((plannedExpensesResponse) => {
-    //             if (plannedExpensesResponse.status === 200) {
-    //                 return plannedExpensesResponse.json();
-    //             } else {
-    //                 throw new Error("Failed to fetch planned expenses");
-    //             }
-    //         })
-    //         .then((plannedExpensesData) => {
-    //             console.log("Data: ", plannedExpensesData);
-                
-    //             for (let j = 0; j < plannedExpensesData.length; j++) {
-    //                 plannedExpenses[j].id = plannedExpensesData[j].id; 
-    //                 plannedExpenses[j].sum = plannedExpensesData[j].sum;
-    //                 plannedExpenses[j].expenseTypeId = plannedExpensesData[j].expenseTypeId; 
-    //             }
-    //             console.log("New List Of PlannedExpenses: ", plannedExpenses);
-
-    //             setListOfPlannedExpenses(plannedExpenses);
-    //             setIsPlannedExpensesDeleting(true);
-    //         })
-
-    //     console.log("List of PlannedExpenses: ", listOfPlannedExpenses)
-
-        
-    //     // Заполняем listOfPlannedIncomes
-    //     const plannedIncomes = incomeTypes.map((incomeType) => ({
-    //         id: 0,
-    //         incomeTypeId: incomeType.id,
-    //         sum: 0,
-    //         budgetId: budgetId
-    //     }));
-    //     console.log("List of PlannedIncomes: ", listOfPlannedIncomes)
-
-    //     // Обновление id запланированных расходов
-    //     const deletePlannedIncomesPromise = fetch(`api/PlannedIncomes/budget/${budgetId}`)
-    //         .then((plannedIncomesResponse) => {
-    //             if (plannedIncomesResponse.status === 200) {
-    //                 return plannedIncomesResponse.json();
-    //             } else {
-    //                 throw new Error("Failed to fetch planned incomes");
-    //             }
-    //         })
-    //         .then((plannedIncomesData) => {
-    //             console.log("Data: ", plannedIncomesData);
-        
-    //             for (let j = 0; j < plannedIncomesData.length; j++) {
-    //                 plannedIncomes[j].id = plannedIncomesData[j].id; 
-    //                 plannedIncomes[j].sum = plannedIncomesData[j].sum; 
-    //                 plannedIncomes[j].incomeTypeId = plannedIncomesData[j].incomeTypeId;
-    //             }
-    //             console.log("New List Of PlannedIncomes: ", plannedIncomes);
-
-    //             setListOfPlannedIncomes(plannedIncomes);
-    //             setIsPlannedIncomesDeleting(true);
-    //         })
-            
-    //     if (canDelete === true) {
-    //         Promise.all([deletePlannedExpensesPromise, deletePlannedIncomesPromise])
-    //             .then(() => {
-    //             // Сначала вызвать API для удаления запланированных доходов и расходов
-    //                 Promise.all([
-    //                     // Вызов API для удаления запланированных расходов
-    //                     ...listOfPlannedExpenses.map((plannedExpense) =>
-    //                     fetch(`api/PlannedExpenses/${plannedExpense.id}`, {
-    //                         method: "DELETE",
-    //                     })
-    //                     ),
-    //                     // Вызов API для удаления запланированных доходов
-    //                     ...listOfPlannedIncomes.map((plannedIncome) =>
-    //                     fetch(`api/PlannedIncomes/${plannedIncome.id}`, {
-    //                         method: "DELETE",
-    //                     })
-    //                     ),
-    //                 ])
-    //                     .then((responses) => {
-    //                     const successfulResponses = responses.filter(
-    //                         (response) => response.status === 204
-    //                     );
-    //                     if (successfulResponses.length === responses.length) {
-    //                         // Все удаления запланированных доходов и расходов прошли успешно
-                
-    //                         // Вызов API для удаления бюджета
-    //                         fetch(`api/Budget/${budgetId}`, {
-    //                         method: "DELETE",
-    //                         })
-    //                         .then((response) => {
-    //                             if (response.status === 204) {
-    //                             // Удаление бюджета из списка после успешного удаления
-    //                             setBudgets((prevBudgets) =>
-    //                                 prevBudgets.filter((budget) => budget.key !== budgetId)
-    //                             );
-    //                             } else {
-    //                             throw new Error("Failed to delete budget");
-    //                             }
-    //                         })
-    //                         .catch((error) => {
-    //                             console.log(error);
-    //                         });
-    //                     } else {
-    //                         throw new Error("Failed to delete planned expenses and incomes");
-    //                     }
-    //                     })
-    //                     .catch((error) => {
-    //                     console.log(error);
-    //                     });
-    //                 })
-    //             .catch((error) => {
-    //                 console.log(error);
-    //             });
-            
-    //         setCanDelete(false);
-    //         }
-    //   };
 
     const handleModelCancel = () => {
         form.resetFields();
@@ -917,7 +788,6 @@ const Budgets = ({ userId }) => {
             setModalVisible(false);
         });
     };
-
 
     const columns = [
         { title: "Начальная дата", dataIndex: "startDate"},

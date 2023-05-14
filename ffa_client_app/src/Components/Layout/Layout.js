@@ -51,21 +51,24 @@ const Layout = ({ user }) => {
 
     return (
         <LayoutAntd>
-            <Header style={{ position: "sticky", top: 0, zIndex: 1, width: "100%" }}>
-                <div
-                    style={{
-                        float: "right",
-                        color: "rgba(255, 255, 255, 0.65)",
-                    }}
-                >
-                {user.isAuthenticated ? (
-                    <strong>{user.userName}</strong>
+            {user.isAuthenticated ? 
+            (
+                <Header style={{ position: "sticky", top: 0, zIndex: 1, width: "100%" }}>
+                    <div
+                        style={{
+                            float: "right",
+                            color: "rgba(255, 255, 255, 0.65)",
+                        }}
+                    >
+                    {user.isAuthenticated ? (
+                        <strong>{user.userName}</strong>
                     ) : (
-                    <strong>Гость</strong>
+                        <strong>Гость</strong>
                     )}
-                </div>
-                <Menu theme="dark" mode="horizontal" items={menuItems} className="menu" />
-            </Header>
+                    </div>
+                    <Menu theme="dark" mode="horizontal" items={menuItems} className="menu" />
+                </Header> 
+            ) : null }
             <Content className="site-layout" style={{ padding: "0 50px" }}>
                 <Outlet />
             </Content>

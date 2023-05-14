@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { Button, Checkbox, Form, Input } from "antd"
+import { Button, Checkbox, Form, Input, Space } from "antd"
 
 const LogIn = ({user, setUser}) => {
     const [errorMessages, setErrorMessages] = useState([])
@@ -85,7 +85,7 @@ const LogIn = ({user, setUser}) => {
     errorMessages.map((error, index) => <div key={index}>{error}</div>)
 
     return (
-        <>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
             {typeof user !== "undefined" &&
                 user.isAuthenticated === true &&
                 user.userId !== '' &&
@@ -96,56 +96,66 @@ const LogIn = ({user, setUser}) => {
                 typeof user.userRole !== 'undefined'? (
                 <h3>Пользователь {user.userName} с ролью {user.userRole} успешно вошел в систему</h3>
             ) : (
-            <>
-                <h3>Вход</h3>
-                <Form
-                    onFinish={logIn}
-                    name="basic"
-                    labelCol={{ span: 8 }}
-                    wrapperCol={{ span: 16 }}
-                    style={{ maxWidth: 600 }}
-                    initialValues={{ remember: false }}
-                    onFinishFailed={renderErrorMessage}
-                    autoComplete="off"
-                >
-                    <Form.Item
-                    label="Username"
-                    name="userName"
-                    rules={[
-                    { required: true, message: "Please input your username!" },
-                    ]}
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+                <Space direction="vertical" size="large">
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                        <h1>Family Finance Analysis</h1>
+                    </div>
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                        <h3>Вход</h3>
+                    </div>
+                    <Form
+                        onFinish={logIn}
+                        name="basic"
+                        labelCol={{ span: 16 }}
+                        wrapperCol={{ span: 16 }}
+                        style={{ maxWidth: 600 }}
+                        initialValues={{ remember: false }}
+                        onFinishFailed={renderErrorMessage}
+                        autoComplete="off"
                     >
-                        <Input />
-                    </Form.Item>
-        
-                    <Form.Item
-                    label="Password"
-                    name="password"
-                    rules={[
-                    { required: true, message: "Please input your password!" },
-                    ]}
-                    >
-                        <Input.Password />
-                    </Form.Item>
-                    
-                    <Form.Item
-                    name="rememberMe"
-                    valuePropName="checked"
-                    wrapperCol={{ offset: 8, span: 16 }}
-                    >
-                        <Checkbox>Remember me</Checkbox>
-                        {renderErrorMessage()}
-                    </Form.Item>
-        
-                    <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                        <Button type="primary" htmlType="submit">
-                            Войти
-                        </Button>
-                    </Form.Item>
-                </Form>
-            </>
+                        <Form.Item
+                            label="Username"
+                            name="userName"
+                            labelCol={{ span: 10 }}
+                            rules={[
+                                { required: true, message: "Please input your username!" },
+                            ]}
+                        >
+                            <Input />
+                        </Form.Item>
+            
+                        <Form.Item
+                            label="Password"
+                            name="password"
+                            labelCol={{ span: 10 }}
+                            rules={[
+                                { required: true, message: "Please input your password!" },
+                            ]}
+                        >
+                            <Input.Password />
+                        </Form.Item>
+                        
+                        <Form.Item
+                            name="rememberMe"
+                            valuePropName="checked"
+                            wrapperCol={{ offset: 8, span: 16 }}
+                            labelCol={{ span: 10 }}
+                        >
+                            <Checkbox>Remember me</Checkbox>
+                            {renderErrorMessage()}
+                        </Form.Item>
+            
+                        <Form.Item wrapperCol={{ offset: 8, span: 16 }}  labelCol={{ span: 10 }}>
+                            <Button type="primary" htmlType="submit">
+                                Войти
+                            </Button>
+                        </Form.Item>
+                    </Form>
+                </Space>
+            </div>
           )}
-        </>
+        </div>
     )
 }
 
