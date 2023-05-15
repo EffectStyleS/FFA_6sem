@@ -17,7 +17,6 @@ namespace FFA6sem.Model.Models
             UserId        = expense.UserId;
         }
 
-
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Не указано название")]

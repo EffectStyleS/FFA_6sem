@@ -10,7 +10,6 @@ const Expenses = ({ userId, userRole }) => {
 
     const [modalVisible, setModalVisible] = useState(false);
     const [reportVisible, setReportVisible] = useState(false);
-    const [reportNullVisible, setReportNullVisible] = useState(false);
 
     const [expenseTypes, setExpenseTypes] = useState([]);
     const [selectedExpenseType, setSelectedExpenseType] = useState(null);
@@ -471,6 +470,8 @@ const Expenses = ({ userId, userRole }) => {
                     onChange={(userId) => {
                         const newSelectedUser = users.find(user => user.userId === userId);
                         setSelectedUser(newSelectedUser);
+                        setFilteredExpensesData(null);
+                        setIsFilteredExpensesDataSets(false);
                     }}
                     style={{ marginLeft: 10 ,marginBottom: 16 }}
                     className="userSelect"

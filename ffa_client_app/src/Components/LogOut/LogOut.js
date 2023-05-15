@@ -37,7 +37,7 @@ const LogOut = ({ setUser }) => {
 
     return (
         <>
-        <Modal title="Title" open={open} onOk={logOff} onCancel={handleCancel}>
+        <Modal title="Выход" open={open} onOk={logOff} onCancel={handleCancel}>
             <p>Выполнить выход?</p>
         </Modal>
         </>

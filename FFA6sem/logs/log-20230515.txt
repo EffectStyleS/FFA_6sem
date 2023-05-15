@@ -276,3 +276,725 @@
 2023-05-15 00:24:24.714 +03:00 [INF] GetAllIncomeTypes called
 2023-05-15 00:24:24.987 +03:00 [INF] GetAllIncomes of user with id 89f3116c-f77f-4408-9e8b-6a8335a6fbda called
 2023-05-15 00:24:29.380 +03:00 [INF] Logoff Kirill succeeded
+2023-05-15 00:29:44.636 +03:00 [INF] User isn't authenticated
+2023-05-15 00:29:45.032 +03:00 [INF] User isn't authenticated
+2023-05-15 00:30:31.953 +03:00 [INF] User isn't authenticated
+2023-05-15 00:30:31.968 +03:00 [INF] User isn't authenticated
+2023-05-15 00:30:43.588 +03:00 [INF] Login Sergey succeeded
+2023-05-15 00:30:44.084 +03:00 [INF] GetAllUsers called
+2023-05-15 00:30:44.103 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:30:44.326 +03:00 [INF] GetAllUsers called
+2023-05-15 00:30:44.429 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:30:44.451 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:30:44.486 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:30:44.834 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:30:44.834 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 00:30:45.163 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:30:45.164 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 00:31:20.511 +03:00 [INF] Income created
+2023-05-15 00:31:20.548 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 00:31:20.866 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:31:33.233 +03:00 [INF] Income with id 18 updated
+2023-05-15 00:31:33.459 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 00:31:40.716 +03:00 [INF] Income with id 2 deleted
+2023-05-15 00:31:44.244 +03:00 [INF] GetAllUsers called
+2023-05-15 00:31:44.257 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:31:44.493 +03:00 [INF] GetAllUsers called
+2023-05-15 00:31:44.574 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:31:44.602 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:31:44.605 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:31:44.620 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:31:44.937 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:31:44.954 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:31:44.954 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 00:31:45.281 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 00:31:45.281 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:32:07.586 +03:00 [INF] Expense created
+2023-05-15 00:32:07.830 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:32:07.905 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:32:14.652 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:32:14.950 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:32:21.070 +03:00 [INF] Expense with id 4 deleted
+2023-05-15 00:32:24.507 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:32:24.785 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:32:27.382 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:32:27.699 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:32:27.732 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:32:27.734 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:32:27.750 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:32:28.012 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:32:28.072 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:32:28.076 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:32:28.088 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 00:32:28.089 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:32:28.411 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 00:32:28.412 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:32:28.726 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:32:29.042 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:38:46.842 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:38:46.842 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:38:46.891 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:38:47.090 +03:00 [INF] Sergey with role user is authenticated
+2023-05-15 00:38:47.260 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:38:47.261 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:38:47.270 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:41:44.832 +03:00 [INF] Sergey with role user is authenticated
+2023-05-15 00:41:44.864 +03:00 [INF] Sergey with role user is authenticated
+2023-05-15 00:41:55.489 +03:00 [INF] Login Sergey succeeded
+2023-05-15 00:41:55.940 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:41:55.953 +03:00 [INF] GetAllUsers called
+2023-05-15 00:41:56.192 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:41:56.257 +03:00 [INF] GetAllUsers called
+2023-05-15 00:41:56.292 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:41:56.322 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:41:56.648 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 00:41:56.648 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 00:41:56.967 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 00:41:56.971 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 00:42:29.536 +03:00 [INF] Income created
+2023-05-15 00:42:29.572 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:42:29.901 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:42:37.206 +03:00 [INF] Income with id 20 updated
+2023-05-15 00:42:37.530 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 00:42:57.082 +03:00 [INF] Income with id 18 updated
+2023-05-15 00:42:57.403 +03:00 [INF] IncomeType with id 6 found
+2023-05-15 00:43:00.648 +03:00 [INF] Income with id 20 deleted
+2023-05-15 00:43:02.860 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:43:02.872 +03:00 [INF] GetAllUsers called
+2023-05-15 00:43:03.108 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:43:03.200 +03:00 [INF] GetAllUsers called
+2023-05-15 00:43:03.221 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:43:03.229 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:43:03.240 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:43:03.565 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:43:03.581 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:43:03.581 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:43:03.900 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:43:03.902 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:43:23.652 +03:00 [INF] Expense created
+2023-05-15 00:43:23.899 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:43:23.969 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:43:27.547 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:43:27.926 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:43:39.006 +03:00 [INF] Expense with id 24 updated
+2023-05-15 00:43:39.346 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:43:42.681 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:43:42.988 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:43:42.994 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:43:43.001 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:43:43.011 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:43:43.349 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:43:43.353 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:43:43.363 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:43:43.379 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:43:43.380 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 00:43:43.698 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:43:43.699 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 00:43:44.022 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:43:44.337 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:44:39.081 +03:00 [INF] Budget created
+2023-05-15 00:44:39.336 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 00:44:39.407 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:44:39.681 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:39.809 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:39.811 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:39.816 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:39.818 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:39.823 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.006 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.135 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.136 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.155 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.157 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.162 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.335 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.462 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.464 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.484 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:44:40.503 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:44:40.504 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:44:40.653 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:44:40.797 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:44:40.800 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:44:40.807 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:44:40.825 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:44:40.827 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:44:40.976 +03:00 [INF] GetAllPlannedExpenses of budget with id 48 called
+2023-05-15 00:44:41.165 +03:00 [INF] GetAllPlannedIncomes of budget with id 48 called
+2023-05-15 00:44:41.928 +03:00 [INF] GetAllPlannedIncomes of budget with id 47 called
+2023-05-15 00:44:41.929 +03:00 [INF] GetAllPlannedExpenses of budget with id 47 called
+2023-05-15 00:44:54.576 +03:00 [INF] Budget with id 47 updated
+2023-05-15 00:44:54.981 +03:00 [INF] TimePeriod with id 1 found
+2023-05-15 00:44:55.012 +03:00 [INF] PlannedExpenses with id 571 updated
+2023-05-15 00:44:55.014 +03:00 [INF] PlannedExpenses with id 567 updated
+2023-05-15 00:44:55.018 +03:00 [INF] PlannedExpenses with id 569 updated
+2023-05-15 00:44:55.023 +03:00 [INF] PlannedExpenses with id 568 updated
+2023-05-15 00:44:55.024 +03:00 [INF] PlannedExpenses with id 570 updated
+2023-05-15 00:44:55.305 +03:00 [INF] PlannedExpenses with id 572 updated
+2023-05-15 00:44:55.343 +03:00 [INF] PlannedExpenses with id 573 updated
+2023-05-15 00:44:55.344 +03:00 [INF] PlannedExpenses with id 575 updated
+2023-05-15 00:44:55.349 +03:00 [INF] PlannedExpenses with id 576 updated
+2023-05-15 00:44:55.361 +03:00 [INF] PlannedExpenses with id 577 updated
+2023-05-15 00:44:55.361 +03:00 [INF] PlannedExpenses with id 574 updated
+2023-05-15 00:44:55.621 +03:00 [INF] PlannedExpenses with id 578 updated
+2023-05-15 00:44:55.679 +03:00 [INF] PlannedExpenses with id 579 updated
+2023-05-15 00:44:55.682 +03:00 [INF] PlannedExpenses with id 580 updated
+2023-05-15 00:44:55.684 +03:00 [INF] PlannedExpenses with id 581 updated
+2023-05-15 00:44:55.693 +03:00 [INF] PlannedExpenses with id 582 updated
+2023-05-15 00:44:55.709 +03:00 [INF] PlannedIncomes with id 228 updated
+2023-05-15 00:44:55.952 +03:00 [INF] PlannedIncomes with id 227 updated
+2023-05-15 00:44:56.000 +03:00 [INF] PlannedIncomes with id 229 updated
+2023-05-15 00:44:56.015 +03:00 [INF] PlannedIncomes with id 230 updated
+2023-05-15 00:44:56.016 +03:00 [INF] PlannedIncomes with id 231 updated
+2023-05-15 00:44:56.023 +03:00 [INF] PlannedIncomes with id 232 updated
+2023-05-15 00:44:56.034 +03:00 [INF] PlannedIncomes with id 233 updated
+2023-05-15 00:44:56.284 +03:00 [INF] PlannedIncomes with id 234 updated
+2023-05-15 00:44:56.565 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:44:56.578 +03:00 [INF] GetAllUsers called
+2023-05-15 00:44:56.898 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:44:56.910 +03:00 [INF] GetAllUsers called
+2023-05-15 00:44:56.917 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:44:56.921 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:44:57.254 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:44:57.258 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:44:57.260 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:44:57.266 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:44:57.268 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:44:57.514 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:44:57.599 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:44:57.601 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:44:57.607 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:44:57.644 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:45:03.629 +03:00 [INF] Logoff Sergey succeeded
+2023-05-15 00:45:14.144 +03:00 [INF] Login LeBatya succeeded
+2023-05-15 00:45:14.542 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:45:14.549 +03:00 [INF] GetAllUsers called
+2023-05-15 00:45:14.808 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:45:14.862 +03:00 [INF] GetAllUsers called
+2023-05-15 00:45:14.873 +03:00 [INF] GetAllIncomes of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:45:14.886 +03:00 [INF] GetAllIncomes of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:45:15.203 +03:00 [INF] IncomeType with id 7 found
+2023-05-15 00:45:15.516 +03:00 [INF] IncomeType with id 7 found
+2023-05-15 00:45:20.610 +03:00 [INF] GetAllIncomes of user with id 0c0a4ed3-759b-4dc1-9a73-11ed346fe376 called
+2023-05-15 00:45:22.230 +03:00 [INF] GetAllIncomes of user with id 89f3116c-f77f-4408-9e8b-6a8335a6fbda called
+2023-05-15 00:45:24.710 +03:00 [INF] GetAllIncomes of user with id d3a8c2b7-b32c-4eed-98de-168b87e9c062 called
+2023-05-15 00:45:25.859 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:45:26.184 +03:00 [INF] IncomeType with id 6 found
+2023-05-15 00:45:26.185 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:45:27.471 +03:00 [INF] GetAllIncomes of user with id fd7aafb3-9d48-4973-8922-4e8299280e4e called
+2023-05-15 00:45:27.803 +03:00 [INF] IncomeType with id 7 found
+2023-05-15 00:45:31.954 +03:00 [INF] GetAllIncomes of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:45:32.286 +03:00 [INF] IncomeType with id 7 found
+2023-05-15 00:45:50.842 +03:00 [INF] Income created
+2023-05-15 00:45:51.176 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:45:51.425 +03:00 [INF] GetAllIncomes of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:45:54.531 +03:00 [INF] GetAllUsers called
+2023-05-15 00:45:54.818 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:45:54.853 +03:00 [INF] GetAllUsers called
+2023-05-15 00:45:54.871 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:45:54.872 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:45:55.133 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:45:55.198 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:45:55.199 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:45:57.816 +03:00 [INF] GetAllExpenses of user with id d3a8c2b7-b32c-4eed-98de-168b87e9c062 called
+2023-05-15 00:45:57.817 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:45:58.078 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:45:59.325 +03:00 [INF] User with id d3a8c2b7-b32c-4eed-98de-168b87e9c062 found
+2023-05-15 00:45:59.665 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:46:02.620 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:46:02.922 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:46:03.258 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:46:03.259 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:46:03.262 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:46:04.242 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:46:04.575 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:46:07.702 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:46:08.010 +03:00 [INF] GetAllExpenses of user with id 0c0a4ed3-759b-4dc1-9a73-11ed346fe376 called
+2023-05-15 00:46:08.339 +03:00 [INF] ExpenseType with id 2 found
+2023-05-15 00:46:09.678 +03:00 [INF] User with id 0c0a4ed3-759b-4dc1-9a73-11ed346fe376 found
+2023-05-15 00:46:10.024 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:46:57.983 +03:00 [INF] GetAllUsers called
+2023-05-15 00:46:58.265 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:46:58.313 +03:00 [INF] GetAllUsers called
+2023-05-15 00:46:58.328 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:46:58.329 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:46:58.588 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:46:58.664 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:46:58.665 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:48:08.964 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:48:08.975 +03:00 [INF] GetAllUsers called
+2023-05-15 00:48:09.268 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:48:09.268 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:48:09.296 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:48:09.591 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:48:13.262 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:48:13.263 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:48:13.527 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:48:13.591 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:48:13.592 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:48:14.508 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:48:14.853 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:48:17.426 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:48:17.731 +03:00 [INF] GetAllExpenses of user with id 0c0a4ed3-759b-4dc1-9a73-11ed346fe376 called
+2023-05-15 00:48:18.048 +03:00 [INF] ExpenseType with id 2 found
+2023-05-15 00:48:18.637 +03:00 [INF] User with id 0c0a4ed3-759b-4dc1-9a73-11ed346fe376 found
+2023-05-15 00:48:18.968 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:51:18.158 +03:00 [INF] LeBatya with role admin is authenticated
+2023-05-15 00:51:18.179 +03:00 [INF] LeBatya with role admin is authenticated
+2023-05-15 00:51:27.432 +03:00 [INF] Login Sergey succeeded
+2023-05-15 00:51:27.688 +03:00 [INF] GetAllUsers called
+2023-05-15 00:51:27.860 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:51:27.867 +03:00 [INF] GetAllUsers called
+2023-05-15 00:51:28.018 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:51:28.019 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:51:28.187 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:51:28.353 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:51:28.354 +03:00 [INF] IncomeType with id 6 found
+2023-05-15 00:51:28.371 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:51:28.676 +03:00 [INF] IncomeType with id 6 found
+2023-05-15 00:51:55.893 +03:00 [INF] Income created
+2023-05-15 00:51:56.147 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 00:51:56.221 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:52:28.764 +03:00 [INF] Sergey with role user is authenticated
+2023-05-15 00:52:28.783 +03:00 [INF] Sergey with role user is authenticated
+2023-05-15 00:52:37.247 +03:00 [INF] Login Sergey succeeded
+2023-05-15 00:52:37.731 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:52:37.737 +03:00 [INF] GetAllUsers called
+2023-05-15 00:52:37.979 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:52:38.059 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:52:38.069 +03:00 [INF] GetAllUsers called
+2023-05-15 00:52:38.081 +03:00 [INF] IncomeType with id 6 found
+2023-05-15 00:52:38.385 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:52:38.389 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 00:52:38.400 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:52:38.750 +03:00 [INF] IncomeType with id 6 found
+2023-05-15 00:52:38.752 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:52:38.755 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 00:52:46.537 +03:00 [INF] Income with id 23 updated
+2023-05-15 00:52:46.882 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 00:53:12.199 +03:00 [INF] Income created
+2023-05-15 00:53:12.535 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 00:53:12.788 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:53:23.528 +03:00 [INF] Income with id 24 updated
+2023-05-15 00:53:23.868 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 00:53:27.153 +03:00 [INF] Income with id 18 deleted
+2023-05-15 00:53:29.687 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:53:29.701 +03:00 [INF] GetAllUsers called
+2023-05-15 00:53:29.949 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:53:30.017 +03:00 [INF] GetAllUsers called
+2023-05-15 00:53:30.036 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:53:30.037 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:53:30.054 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:53:30.362 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:53:30.365 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:53:30.400 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:53:30.417 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:53:30.726 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:53:30.727 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:53:30.741 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:53:32.111 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:53:32.389 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:53:42.009 +03:00 [INF] Expense with id 22 updated
+2023-05-15 00:53:42.339 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:53:44.202 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:53:44.547 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:54:09.513 +03:00 [INF] Expense created
+2023-05-15 00:54:09.857 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 00:54:10.113 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:54:14.670 +03:00 [INF] Expense with id 23 deleted
+2023-05-15 00:54:16.435 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:54:16.683 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:54:21.364 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:54:21.679 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:54:21.682 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:54:21.694 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:54:21.699 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:54:22.005 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:54:22.006 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:54:22.030 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:54:22.037 +03:00 [INF] TimePeriod with id 1 found
+2023-05-15 00:54:22.046 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:54:22.060 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 00:54:22.353 +03:00 [INF] TimePeriod with id 1 found
+2023-05-15 00:54:22.366 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:54:22.378 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 00:54:22.700 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 00:54:23.018 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 00:54:59.899 +03:00 [INF] Budget created
+2023-05-15 00:55:00.163 +03:00 [INF] TimePeriod with id 1 found
+2023-05-15 00:55:00.225 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:55:00.483 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.610 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.615 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.617 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.622 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.629 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.801 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.950 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.954 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.959 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.961 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:00.969 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:01.119 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:01.274 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:01.276 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:01.291 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:55:01.293 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:55:01.296 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:55:01.446 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:55:01.600 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:55:01.602 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:55:01.623 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:55:01.627 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:55:01.630 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:55:01.771 +03:00 [INF] GetAllPlannedExpenses of budget with id 49 called
+2023-05-15 00:55:01.947 +03:00 [INF] GetAllPlannedIncomes of budget with id 49 called
+2023-05-15 00:55:02.836 +03:00 [INF] GetAllPlannedIncomes of budget with id 48 called
+2023-05-15 00:55:02.837 +03:00 [INF] GetAllPlannedExpenses of budget with id 48 called
+2023-05-15 00:55:13.402 +03:00 [INF] Budget with id 48 updated
+2023-05-15 00:55:13.827 +03:00 [INF] PlannedExpenses with id 586 updated
+2023-05-15 00:55:13.831 +03:00 [INF] PlannedExpenses with id 583 updated
+2023-05-15 00:55:13.833 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 00:55:13.862 +03:00 [INF] PlannedExpenses with id 584 updated
+2023-05-15 00:55:13.865 +03:00 [INF] PlannedExpenses with id 588 updated
+2023-05-15 00:55:13.867 +03:00 [INF] PlannedExpenses with id 585 updated
+2023-05-15 00:55:14.152 +03:00 [INF] PlannedExpenses with id 589 updated
+2023-05-15 00:55:14.153 +03:00 [INF] PlannedExpenses with id 587 updated
+2023-05-15 00:55:14.166 +03:00 [INF] PlannedExpenses with id 591 updated
+2023-05-15 00:55:14.185 +03:00 [INF] PlannedExpenses with id 593 updated
+2023-05-15 00:55:14.185 +03:00 [INF] PlannedExpenses with id 590 updated
+2023-05-15 00:55:14.199 +03:00 [INF] PlannedExpenses with id 592 updated
+2023-05-15 00:55:14.472 +03:00 [INF] PlannedExpenses with id 594 updated
+2023-05-15 00:55:14.473 +03:00 [INF] PlannedExpenses with id 595 updated
+2023-05-15 00:55:14.485 +03:00 [INF] PlannedExpenses with id 597 updated
+2023-05-15 00:55:14.506 +03:00 [INF] PlannedExpenses with id 598 updated
+2023-05-15 00:55:14.507 +03:00 [INF] PlannedExpenses with id 596 updated
+2023-05-15 00:55:14.519 +03:00 [INF] PlannedIncomes with id 236 updated
+2023-05-15 00:55:14.796 +03:00 [INF] PlannedIncomes with id 235 updated
+2023-05-15 00:55:14.797 +03:00 [INF] PlannedIncomes with id 237 updated
+2023-05-15 00:55:14.812 +03:00 [INF] PlannedIncomes with id 239 updated
+2023-05-15 00:55:14.829 +03:00 [INF] PlannedIncomes with id 238 updated
+2023-05-15 00:55:14.830 +03:00 [INF] PlannedIncomes with id 240 updated
+2023-05-15 00:55:14.844 +03:00 [INF] PlannedIncomes with id 242 updated
+2023-05-15 00:55:15.127 +03:00 [INF] PlannedIncomes with id 241 updated
+2023-05-15 00:55:15.983 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:55:15.987 +03:00 [INF] GetAllUsers called
+2023-05-15 00:55:16.249 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:55:16.302 +03:00 [INF] GetAllUsers called
+2023-05-15 00:55:16.318 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:55:16.320 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:55:16.340 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:55:16.652 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:55:16.656 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:55:16.658 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:55:16.662 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 00:55:16.984 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:55:16.985 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 00:55:16.985 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:55:18.170 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:55:18.435 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:55:22.315 +03:00 [INF] Logoff Sergey succeeded
+2023-05-15 00:55:33.272 +03:00 [WRN] Invalid password for user.
+2023-05-15 00:55:33.275 +03:00 [WRN] User failed to provide the correct password.
+2023-05-15 00:55:33.277 +03:00 [INF] Login LeBatya failed
+2023-05-15 00:55:39.063 +03:00 [INF] Login LeBatya succeeded
+2023-05-15 00:55:39.468 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:55:39.473 +03:00 [INF] GetAllUsers called
+2023-05-15 00:55:39.734 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:55:39.787 +03:00 [INF] GetAllUsers called
+2023-05-15 00:55:39.799 +03:00 [INF] GetAllIncomes of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:55:39.811 +03:00 [INF] GetAllIncomes of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:55:40.134 +03:00 [INF] IncomeType with id 7 found
+2023-05-15 00:55:40.169 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:55:40.498 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:55:40.499 +03:00 [INF] IncomeType with id 7 found
+2023-05-15 00:56:01.290 +03:00 [INF] Income created
+2023-05-15 00:56:01.541 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 00:56:01.613 +03:00 [INF] GetAllIncomes of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:56:07.111 +03:00 [INF] Income with id 22 updated
+2023-05-15 00:56:07.446 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:56:11.112 +03:00 [INF] GetAllIncomes of user with id 0c0a4ed3-759b-4dc1-9a73-11ed346fe376 called
+2023-05-15 00:56:13.276 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:56:13.531 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 00:56:13.607 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 00:56:13.610 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 00:56:15.017 +03:00 [INF] GetAllIncomes of user with id fd7aafb3-9d48-4973-8922-4e8299280e4e called
+2023-05-15 00:56:15.345 +03:00 [INF] IncomeType with id 7 found
+2023-05-15 00:56:20.406 +03:00 [INF] GetAllUsers called
+2023-05-15 00:56:20.696 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:56:20.731 +03:00 [INF] GetAllUsers called
+2023-05-15 00:56:20.752 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:56:20.753 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:56:21.011 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:56:21.076 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:56:21.078 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:56:22.970 +03:00 [INF] GetAllExpenses of user with id d3a8c2b7-b32c-4eed-98de-168b87e9c062 called
+2023-05-15 00:56:22.971 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:56:23.223 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:56:24.529 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:56:24.841 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 00:56:25.175 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 00:56:25.178 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 00:56:25.181 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 00:56:27.111 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 00:56:27.454 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:56:30.752 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:56:31.063 +03:00 [INF] GetAllExpenses of user with id d3a8c2b7-b32c-4eed-98de-168b87e9c062 called
+2023-05-15 00:56:31.382 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 00:56:33.103 +03:00 [INF] User with id d3a8c2b7-b32c-4eed-98de-168b87e9c062 found
+2023-05-15 00:56:33.436 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:56:35.698 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:56:35.999 +03:00 [INF] GetAllExpenses of user with id 0c0a4ed3-759b-4dc1-9a73-11ed346fe376 called
+2023-05-15 00:56:36.333 +03:00 [INF] ExpenseType with id 2 found
+2023-05-15 00:56:38.467 +03:00 [INF] User with id 0c0a4ed3-759b-4dc1-9a73-11ed346fe376 found
+2023-05-15 00:56:38.797 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:56:43.120 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:56:43.422 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:57:05.499 +03:00 [INF] Expense created
+2023-05-15 00:57:05.752 +03:00 [INF] ExpenseType with id 3 found
+2023-05-15 00:57:05.829 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:57:11.379 +03:00 [INF] Expense with id 26 updated
+2023-05-15 00:57:11.711 +03:00 [INF] ExpenseType with id 3 found
+2023-05-15 00:57:15.340 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:57:15.677 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:57:15.681 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:57:15.683 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:57:15.692 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:57:16.014 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:57:16.015 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:57:16.020 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:57:19.586 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:57:19.588 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:57:19.591 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:57:19.594 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:57:19.822 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:57:19.918 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:57:19.919 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:57:19.921 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:57:52.954 +03:00 [INF] Budget created
+2023-05-15 00:57:53.380 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 00:57:53.645 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:57:53.712 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.001 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.003 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.012 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.013 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.020 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.033 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.329 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.330 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.351 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.354 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.358 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.365 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.658 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.693 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.702 +03:00 [INF] PlannedExpenses created
+2023-05-15 00:57:54.704 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:57:54.710 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:57:54.712 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:57:55.026 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:57:55.028 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:57:55.030 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:57:55.035 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:57:55.044 +03:00 [INF] PlannedIncomes created
+2023-05-15 00:57:55.045 +03:00 [INF] GetAllPlannedExpenses of budget with id 50 called
+2023-05-15 00:57:55.352 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:57:55.362 +03:00 [INF] GetAllUsers called
+2023-05-15 00:57:55.369 +03:00 [INF] GetAllPlannedIncomes of budget with id 50 called
+2023-05-15 00:57:55.680 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:57:55.689 +03:00 [INF] GetAllUsers called
+2023-05-15 00:57:55.705 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:57:55.706 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:57:56.028 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 00:57:56.029 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:57:56.034 +03:00 [INF] ExpenseType with id 3 found
+2023-05-15 00:57:56.353 +03:00 [INF] ExpenseType with id 3 found
+2023-05-15 00:57:57.176 +03:00 [INF] User with id 1cb92de2-93f6-4666-993c-3be5a34edef4 found
+2023-05-15 00:57:57.437 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 00:58:00.909 +03:00 [INF] Logoff LeBatya succeeded
+2023-05-15 00:58:19.232 +03:00 [INF] GetAllUsers called
+2023-05-15 00:58:19.535 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:58:19.551 +03:00 [INF] GetAllUsers called
+2023-05-15 00:58:19.563 +03:00 [INF] GetAllIncomes of user with id ca25f1af-03c5-43a6-b6ed-27f629f17108 called
+2023-05-15 00:58:19.848 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:58:19.882 +03:00 [INF] GetAllIncomes of user with id ca25f1af-03c5-43a6-b6ed-27f629f17108 called
+2023-05-15 00:58:21.902 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:58:21.910 +03:00 [INF] GetAllUsers called
+2023-05-15 00:58:22.155 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:58:22.224 +03:00 [INF] GetAllUsers called
+2023-05-15 00:58:22.238 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:58:22.239 +03:00 [INF] GetAllExpenses of user with id ca25f1af-03c5-43a6-b6ed-27f629f17108 called
+2023-05-15 00:58:22.253 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:58:22.554 +03:00 [INF] GetAllExpenses of user with id ca25f1af-03c5-43a6-b6ed-27f629f17108 called
+2023-05-15 00:58:22.759 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:58:22.792 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:58:22.795 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:58:22.797 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:58:23.123 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 00:58:23.124 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 00:58:23.128 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 00:58:23.130 +03:00 [INF] GetUserBudgets called
+2023-05-15 00:58:24.788 +03:00 [INF] Logoff Nikita succeeded
+2023-05-15 02:35:14.259 +03:00 [INF] User isn't authenticated
+2023-05-15 02:35:14.656 +03:00 [INF] User isn't authenticated
+2023-05-15 02:35:26.016 +03:00 [INF] Login Sergey succeeded
+2023-05-15 02:35:26.232 +03:00 [INF] GetAllUsers called
+2023-05-15 02:35:26.584 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 02:35:26.590 +03:00 [INF] GetAllUsers called
+2023-05-15 02:35:26.657 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:35:26.901 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 02:35:27.020 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:35:27.060 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 02:35:27.060 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 02:35:27.062 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 02:35:27.406 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 02:35:27.407 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 02:35:27.414 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 02:38:35.392 +03:00 [INF] GetAllUsers called
+2023-05-15 02:38:35.405 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 02:38:35.620 +03:00 [INF] GetAllUsers called
+2023-05-15 02:38:35.728 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 02:38:35.733 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:38:35.747 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:38:35.753 +03:00 [INF] GetUserBudgets called
+2023-05-15 02:38:36.072 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 02:38:36.081 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 02:38:36.088 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 02:38:36.098 +03:00 [INF] GetUserBudgets called
+2023-05-15 02:38:36.393 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 02:38:36.406 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 02:38:36.407 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 02:39:12.262 +03:00 [INF] Logoff Sergey succeeded
+2023-05-15 02:42:28.152 +03:00 [INF] Login Sergey succeeded
+2023-05-15 02:42:28.411 +03:00 [INF] GetAllUsers called
+2023-05-15 02:42:28.552 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 02:42:28.559 +03:00 [INF] GetAllUsers called
+2023-05-15 02:42:28.739 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 02:42:28.742 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:42:28.878 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:42:29.074 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 02:42:29.075 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 02:42:29.081 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 02:42:29.089 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 02:42:29.404 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 02:42:29.405 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 02:42:33.276 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 02:42:33.283 +03:00 [INF] GetAllUsers called
+2023-05-15 02:42:33.525 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 02:42:33.594 +03:00 [INF] GetAllUsers called
+2023-05-15 02:42:33.608 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:42:33.610 +03:00 [INF] GetUserBudgets called
+2023-05-15 02:42:33.621 +03:00 [INF] GetUserBudgets called
+2023-05-15 02:42:33.940 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 02:42:33.941 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 02:42:33.942 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:42:33.947 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 02:42:34.273 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 02:42:34.275 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 02:42:34.276 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 02:42:51.863 +03:00 [INF] GetUserBudgets called
+2023-05-15 02:42:51.864 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 02:42:51.868 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 02:42:51.886 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 02:42:52.106 +03:00 [INF] GetUserBudgets called
+2023-05-15 02:42:52.189 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 02:42:52.192 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 02:42:52.204 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 02:42:52.204 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 02:42:52.207 +03:00 [INF] TimePeriod with id 1 found
+2023-05-15 02:42:52.421 +03:00 [INF] GetAllTimePeriods called
+2023-05-15 02:42:52.519 +03:00 [INF] TimePeriod with id 2 found
+2023-05-15 02:42:52.520 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 02:42:52.530 +03:00 [INF] TimePeriod with id 1 found
+2023-05-15 02:42:52.833 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 02:42:52.844 +03:00 [INF] TimePeriod with id 1 found
+2023-05-15 02:42:53.151 +03:00 [INF] TimePeriod with id 3 found
+2023-05-15 02:42:53.161 +03:00 [INF] TimePeriod with id 1 found
+2023-05-15 02:43:19.512 +03:00 [INF] GetAllPlannedExpenses of budget with id 32 called
+2023-05-15 02:43:19.513 +03:00 [INF] GetAllPlannedIncomes of budget with id 32 called
+2023-05-15 02:44:16.961 +03:00 [INF] Logoff Sergey succeeded
+2023-05-15 02:53:27.318 +03:00 [INF] Login Sergey succeeded
+2023-05-15 02:53:27.568 +03:00 [INF] GetAllUsers called
+2023-05-15 02:53:27.714 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 02:53:27.748 +03:00 [INF] GetAllUsers called
+2023-05-15 02:53:27.895 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 02:53:27.900 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:53:28.065 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:53:28.235 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 02:53:28.238 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 02:53:28.253 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 02:53:28.258 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 02:53:28.557 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 02:53:28.566 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 02:54:29.882 +03:00 [INF] Logoff Sergey succeeded
+2023-05-15 02:57:37.253 +03:00 [INF] Login Sergey succeeded
+2023-05-15 02:57:37.481 +03:00 [INF] GetAllUsers called
+2023-05-15 02:57:37.632 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 02:57:37.645 +03:00 [INF] GetAllUsers called
+2023-05-15 02:57:37.800 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 02:57:37.802 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:57:37.957 +03:00 [INF] GetAllIncomes of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:57:38.139 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 02:57:38.139 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 02:57:38.141 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 02:57:38.154 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 02:57:38.457 +03:00 [INF] IncomeType with id 5 found
+2023-05-15 02:57:38.458 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 02:57:39.031 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 02:57:39.041 +03:00 [INF] GetAllUsers called
+2023-05-15 02:57:39.278 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 02:57:39.362 +03:00 [INF] GetUserBudgets called
+2023-05-15 02:57:39.369 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:57:39.388 +03:00 [INF] GetAllUsers called
+2023-05-15 02:57:39.392 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 02:57:39.694 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 02:57:39.695 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 02:57:39.709 +03:00 [INF] GetAllExpenses of user with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 called
+2023-05-15 02:57:39.711 +03:00 [INF] GetUserBudgets called
+2023-05-15 02:57:40.043 +03:00 [INF] ExpenseType with id 1 found
+2023-05-15 02:57:40.045 +03:00 [INF] ExpenseType with id 6 found
+2023-05-15 02:57:40.047 +03:00 [INF] ExpenseType with id 4 found
+2023-05-15 02:57:48.736 +03:00 [INF] User with id eb6d3d84-b9bb-413d-a374-60d7792db5f6 found
+2023-05-15 02:57:49.101 +03:00 [INF] DifferenceOfExpensesSum is taken
+2023-05-15 03:03:31.539 +03:00 [INF] Logoff Sergey succeeded
+2023-05-15 03:03:43.131 +03:00 [WRN] Invalid password for user.
+2023-05-15 03:03:43.133 +03:00 [WRN] User failed to provide the correct password.
+2023-05-15 03:03:43.135 +03:00 [INF] Login LeBatya failed
+2023-05-15 03:03:48.700 +03:00 [INF] Login LeBatya succeeded
+2023-05-15 03:03:49.083 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 03:03:49.090 +03:00 [INF] GetAllUsers called
+2023-05-15 03:03:49.319 +03:00 [INF] GetAllIncomeTypes called
+2023-05-15 03:03:49.405 +03:00 [INF] GetAllUsers called
+2023-05-15 03:03:49.415 +03:00 [INF] GetAllIncomes of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 03:03:49.425 +03:00 [INF] GetAllIncomes of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 03:03:49.738 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 03:03:49.740 +03:00 [INF] IncomeType with id 7 found
+2023-05-15 03:03:49.749 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 03:03:50.063 +03:00 [INF] IncomeType with id 1 found
+2023-05-15 03:03:50.064 +03:00 [INF] IncomeType with id 7 found
+2023-05-15 03:03:50.075 +03:00 [INF] IncomeType with id 3 found
+2023-05-15 03:03:55.203 +03:00 [INF] GetAllIncomes of user with id fd7aafb3-9d48-4973-8922-4e8299280e4e called
+2023-05-15 03:03:55.454 +03:00 [INF] IncomeType with id 7 found
+2023-05-15 03:04:38.172 +03:00 [INF] GetAllUsers called
+2023-05-15 03:04:38.469 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 03:04:38.491 +03:00 [INF] GetAllUsers called
+2023-05-15 03:04:38.522 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 03:04:38.523 +03:00 [INF] GetUserBudgets called
+2023-05-15 03:04:38.786 +03:00 [INF] GetAllExpenseTypes called
+2023-05-15 03:04:38.856 +03:00 [INF] GetAllExpenses of user with id 1cb92de2-93f6-4666-993c-3be5a34edef4 called
+2023-05-15 03:04:38.857 +03:00 [INF] GetUserBudgets called
+2023-05-15 03:04:38.859 +03:00 [INF] ExpenseType with id 3 found
+2023-05-15 03:04:39.177 +03:00 [INF] ExpenseType with id 3 found
+2023-05-15 03:04:40.721 +03:00 [INF] GetAllExpenses of user with id ca25f1af-03c5-43a6-b6ed-27f629f17108 called
+2023-05-15 03:04:41.024 +03:00 [INF] GetUserBudgets called
+2023-05-15 03:04:42.478 +03:00 [INF] GetAllExpenses of user with id d3a8c2b7-b32c-4eed-98de-168b87e9c062 called
+2023-05-15 03:04:42.479 +03:00 [INF] GetUserBudgets called
+2023-05-15 03:04:42.742 +03:00 [INF] ExpenseType with id 15 found
+2023-05-15 03:04:44.437 +03:00 [INF] GetUserBudgets called
+2023-05-15 03:04:44.739 +03:00 [INF] GetAllExpenses of user with id fd7aafb3-9d48-4973-8922-4e8299280e4e called
+2023-05-15 03:04:46.354 +03:00 [INF] GetAllExpenses of user with id 0c0a4ed3-759b-4dc1-9a73-11ed346fe376 called
+2023-05-15 03:04:46.355 +03:00 [INF] GetUserBudgets called
+2023-05-15 03:04:46.603 +03:00 [INF] ExpenseType with id 2 found
+2023-05-15 03:04:56.307 +03:00 [INF] User with id 0c0a4ed3-759b-4dc1-9a73-11ed346fe376 found
+2023-05-15 03:04:56.653 +03:00 [INF] DifferenceOfExpensesSum is taken
